@@ -1,0 +1,24 @@
+@use '../util' as *;
+
+body {
+  font-size: rem(16);
+  font-family: var(--ff-lmroman);
+}
+
+h2 {
+  font-size: rem(42);
+  font-family: var(--ff-raleway);
+  font-weight: 100;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin-bottom: rem(30);
+}
+strong {
+  font-weight: 700;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}

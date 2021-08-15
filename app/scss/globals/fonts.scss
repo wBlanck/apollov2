@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'LMRomanSlant10';
+  src: url('/app/scss/fonts/lmromanslant10-regular-webfont.eot');
+  src: url('/app/scss/fonts/lmromanslant10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/app/scss/fonts/lmromanslant10-regular-webfont.woff') format('woff'),
+       url('/app/scss/fonts/lmromanslant10-regular-webfont.ttf') format('truetype'),
+       url('/app/scss/fonts/lmromanslant10-regular-webfont.svg#latin_modern_roman_slante10Rg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  --ff-lmroman: 'LMRomanSlant10', sans-serif;
+  --ff-raleway: 'Raleway', sans-serif;
+}
+
+

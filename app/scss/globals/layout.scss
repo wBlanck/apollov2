@@ -1,0 +1,34 @@
+@use '../util' as *;
+
+.section-container {
+  width: rem(1440);
+  max-width: 95%;
+  height: rem(600);
+  background-color: #efefef;
+  margin: rem(30) auto 0 auto;
+  padding: 0 rem(30);
+  position: relative;
+
+  @include breakpoint-down('medium-768') {
+    margin: rem(15) auto;
+  }
+  @include breakpoint-down('small') {
+    padding: rem(10);
+  }
+  
+}
+.content-container {
+  height: 100%;
+  max-width: rem(1180);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+svg {
+  position: absolute;
+  fill: #e3e3e3;
+  height: 100%;
+  top: 0;
+  left: 10px;
+}
