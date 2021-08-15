@@ -1,0 +1,66 @@
+@use '../util/' as *;
+
+.single-slide {
+  padding: 0;
+
+
+  svg {
+    opacity: .1;
+    z-index: 1;
+  }
+
+  .btn {
+    height: rem(60);
+    width: rem(60);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    
+    @include breakpoint-down('small') {
+      transform: translateY(-50%) scale(.7);
+    }
+    i {
+      font-size: rem(28);
+    }
+  }
+  .next-btn {
+    right: rem(30);
+    @include breakpoint-down('small') {
+      right: 0;
+    }
+  }
+  .prev-btn {
+    left: rem(30);
+    @include breakpoint-down('small') {
+      left: 0;
+    }
+  }
+
+  &__list {
+    height: 100%;
+    position: relative;
+  }
+  &__item {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+
+    &:nth-child(1) {
+      background: url('/dist/img/full-slide/thumb-1.jpg') center no-repeat;
+    }
+    &:nth-child(2) {
+      background: url('/dist/img/full-slide/thumb-2.jpg') center no-repeat;
+    }
+    &:nth-child(3) {
+      background: url('/dist/img/full-slide/thumb-3.jpg') center no-repeat;
+    }
+  }
+  
+}
