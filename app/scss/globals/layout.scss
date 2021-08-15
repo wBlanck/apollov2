@@ -8,14 +8,14 @@
   margin: rem(30) auto 0 auto;
   padding: 0 rem(30);
   position: relative;
-
+  
+  
   @include breakpoint-down('medium-768') {
     margin: rem(15) auto;
   }
   @include breakpoint-down('small') {
     padding: rem(10);
   }
-  
 }
 .content-container {
   height: 100%;

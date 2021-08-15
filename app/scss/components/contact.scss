@@ -1,0 +1,69 @@
+@use '../util/' as *;
+
+.contact {
+  .section-container {
+    margin-bottom: rem(30);
+  }
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__heading {
+
+  }
+  &__paragraph {
+    margin-bottom: rem(45);
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: rem(600);
+    color: #111;
+    font-family: var(--ff-raleway);
+  }
+  &__form > * {
+    outline: none;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 0 rem(15);
+    height: rem(40);
+  }
+  &__email {
+    width: 47%;
+    
+  }
+  &__subject {
+    width: 47%;
+    
+  }
+  &__message {
+    width: 100%;
+    resize: none;
+    height: rem(90);
+    margin: rem(30) 0;
+    padding: rem(15);
+  }
+  &__submit {
+    width: 100%;
+    color: #fff;
+    background-color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: rem(10);
+    font-family: var(--ff-raleway);
+    z-index: 1;
+    font-size: rem(12);
+  }
+}
