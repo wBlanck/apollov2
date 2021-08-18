@@ -11,39 +11,6 @@
     z-index: 1;
   }
 
-  .btn {
-    height: rem(60);
-    width: rem(60);
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    
-    @include breakpoint-down('small') {
-      transform: translateY(-50%) scale(.7);
-    }
-    i {
-      font-size: rem(28);
-    }
-  }
-  .next-btn {
-    right: rem(30);
-    @include breakpoint-down('small') {
-      right: 0;
-    }
-  }
-  .prev-btn {
-    left: rem(30);
-    @include breakpoint-down('small') {
-      left: 0;
-    }
-  }
-
   &__list {
     height: 100%;
     position: relative;
