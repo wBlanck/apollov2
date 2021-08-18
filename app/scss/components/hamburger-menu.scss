@@ -3,14 +3,14 @@
 .hamburger {
   height: rem(2);
   width: rem(23);
-  background-color: #222;
+  background-color: var(--clr-black-800);
   position: relative;
   &::before {
     content: '';
     height: rem(2);
     width: rem(23);
     position: absolute;
-    background-color: #222;
+    background-color: var(--clr-black-800);
     top: -6px;
   }
 
@@ -19,7 +19,7 @@
     height: rem(2);
     width: rem(23);
     position: absolute;
-    background-color: #222;
+    background-color: var(--clr-black-800);
     bottom: -6px;
   }
 }

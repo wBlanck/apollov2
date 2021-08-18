@@ -13,12 +13,12 @@
     height: rem(30);
     width: rem(30);
     margin-right: rem(20);
-    background-color: #909090;
-    color: #fff;
+    background-color: var(--clr-gray-600);
+    color: var(--clr-white-100);
     transition: background-color .2s ease-in-out;
     
     &:hover {
-      background-color: #020202;
+      background-color: var(--clr-black-900);
     }
   }
 }

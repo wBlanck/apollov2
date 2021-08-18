@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: rem(600);
-    color: #111;
+    color: var(--clr-black-900);
     font-family: var(--ff-raleway);
 
     @include breakpoint-down('small') {
@@ -34,7 +34,7 @@
   }
   &__form > * {
     outline: none;
-    border: 1px solid #111;
+    border: 1px solid var(--clr-black-900);
     background: transparent;
     padding: 0 rem(15);
     height: rem(40);
@@ -68,8 +68,8 @@
   }
   &__submit {
     width: 100%;
-    color: #fff;
-    background-color: #111;
+    color: var(--clr-white-100);
+    background-color: var(--clr-black-900);
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
