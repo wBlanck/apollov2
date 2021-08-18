@@ -26,6 +26,11 @@
     max-width: rem(600);
     color: #111;
     font-family: var(--ff-raleway);
+
+    @include breakpoint-down('small') {
+      flex-direction: column;
+      width: 100%;
+    }
   }
   &__form > * {
     outline: none;
@@ -38,11 +43,17 @@
   }
   &__email {
     width: 47%;
-    
+    margin-bottom: rem(10);
+    @include breakpoint-down('small') {
+      width: 100%;
+    }
   }
   &__subject {
     width: 47%;
-    
+
+    @include breakpoint-down('small') {
+      width: 100%;
+    }
   }
   &__message {
     width: 100%;
@@ -50,6 +61,10 @@
     height: rem(90);
     margin: rem(30) 0;
     padding: rem(15);
+
+    @include breakpoint-down('small') {
+      margin: rem(10) 0;
+    }
   }
   &__submit {
     width: 100%;

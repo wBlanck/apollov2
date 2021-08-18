@@ -23,13 +23,13 @@
     opacity: 0;
     transition: opacity .3s ease-in-out;
     &:nth-child(1) {
-      background: url('/dist/img/full-slide/thumb-1.jpg') center no-repeat;
+      background: url('/app/img/full-slide/thumb-1.jpg') center no-repeat;
     }
     &:nth-child(2) {
-      background: url('/dist/img/full-slide/thumb-2.jpg') center no-repeat;
+      background: url('/app/img/full-slide/thumb-2.jpg') center no-repeat;
     }
     &:nth-child(3) {
-      background: url('/dist/img/full-slide/thumb-3.jpg') center no-repeat;
+      background: url('/app/img/full-slide/thumb-3.jpg') center no-repeat;
     }
   }
   

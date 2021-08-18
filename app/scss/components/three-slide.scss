@@ -7,38 +7,6 @@
     left: rem(90);
     z-index: 1;
   }
-  .btn {
-    height: rem(60);
-    width: rem(60);
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    
-    @include breakpoint-down('small') {
-      transform: translateY(-50%) scale(.7);
-    }
-    i {
-      font-size: rem(28);
-    }
-  }
-  .next-btn {
-    right: rem(30);
-    @include breakpoint-down('small') {
-      right: 0;
-    }
-  }
-  .prev-btn {
-    left: rem(30);
-    @include breakpoint-down('small') {
-      left: 0;
-    }
-  }
 
   &__slider {
     position: relative;
@@ -49,6 +17,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 1;
+
     &-1 {
       
     }
@@ -59,25 +29,37 @@
 
     }
     &-4 {
-
+      opacity: 0;
     }
   }
   &__img {
-
+    width: 100%;
   }
 
   .back {
     left: 0;
     opacity: 1;
+
+    @include breakpoint-down('medium-768') {
+      display: none;
+    }
   }
   .current {
     left: 50%;
     transform: translate(-50%, -50%) scale(1.3);
     opacity: 1;
     z-index: 10;
+
+    @include breakpoint-down('medium-768') {
+      width: 70%;
+    }
   }
   .front {
     right: 0;
     opacity: 1;
+
+    @include breakpoint-down('medium-768') {
+      display: none;
+    }
   }
 }
