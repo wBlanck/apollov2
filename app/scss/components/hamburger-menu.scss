@@ -1,0 +1,25 @@
+@use '../util/' as *;
+
+.hamburger {
+  height: rem(2);
+  width: rem(23);
+  background-color: #222;
+  position: relative;
+  &::before {
+    content: '';
+    height: rem(2);
+    width: rem(23);
+    position: absolute;
+    background-color: #222;
+    top: -6px;
+  }
+
+  &::after {
+    content: '';
+    height: rem(2);
+    width: rem(23);
+    position: absolute;
+    background-color: #222;
+    bottom: -6px;
+  }
+}
